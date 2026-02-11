@@ -77,7 +77,7 @@ jobs:
       id-token: write      # OIDC for registry auth
       actions: read        # access reusable workflow
       attestations: write  # publish build provenance
-    uses: complytime/org-infra/.github/workflows/reusable_push_ghcr.yml@main
+    uses: complytime/org-infra/.github/workflows/reusable_publish_ghcr.yml@main
     with:
       component_name: compass
       containerfile_path: compass/images/Containerfile.compass
@@ -97,7 +97,7 @@ jobs:
       id-token: write      # OIDC for registry auth
       actions: read        # access reusable workflow
       attestations: write  # publish build provenance
-    uses: complytime/org-infra/.github/workflows/reusable_push_ghcr.yml@main
+    uses: complytime/org-infra/.github/workflows/reusable_publish_ghcr.yml@main
     with:
       component_name: beacon-distro
       containerfile_path: beacon-distro/Containerfile.collector
